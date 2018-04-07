@@ -1,0 +1,59 @@
+<!--
+  This template loads for the 'tab.friend-detail' state (app.js)
+  'friend' is a $scope variable created in the FriendsCtrl controller (controllers.js)
+  The FriendsCtrl pulls data from the Friends service (service.js)
+  The Friends service returns an array of friend data
+-->
+<ion-view view-title="Week {{VideoData.Name}}">
+ 
+<ion-content class="padding">
+    <h4>Timelapse Video</h4>
+    <p>
+    Average data and video of the week {{ VideoData.Name }}
+    </p>
+           
+       
+       
+        <div >
+          <a class="item  item-thumbnail-left item-text-wrap"  >
+                
+            <img src="img/RaspiGarden.png">
+            <h2 > Week: <span class="temperature"> {{ VideoData.Name }} </span></h2>
+            
+            <h2> <span class="ion-ios-cloudy-outline larger"></span> Humidity Max:  <span class="temperature"> {{ VideoData.HMax }}%</span></h2>
+
+            <h2> <span class="ion-ios-cloudy-outline larger"></span> Humidity Min:  <span class="temperature"> {{ VideoData.HMin }}%</span></h2>
+
+            <h2 ><span class="ion-thermometer larger"></span> Temperature Max:<span class="temperature">  {{ VideoData.TMax }}°c</span></h2>
+
+            <h2 ><span class="ion-thermometer larger"></span> Temperature Min:<span class="temperature"> {{ VideoData.TMim }}°c</span></h2>
+
+            
+          </a>
+
+        </div>
+              
+                  <a href="{{urlVideo | trusted}}" title="Video">
+                                
+                     <img class="image" src="{{url}}" /> 
+                  </a>
+                 
+
+              
+
+  </ion-content>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-view>

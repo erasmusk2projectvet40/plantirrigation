@@ -1,0 +1,23 @@
+/* Empty. Add your own CSS if you like */
+@font-face {
+  font-family: 'digital';
+  src: url('font.ttf') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.temperature {
+  font-family: 'digital';
+  
+}
+
+.image{
+
+	max-width: 100%;
+	height: auto;
+}
+
+img{
+
+	
+}

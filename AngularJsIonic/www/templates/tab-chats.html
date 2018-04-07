@@ -1,0 +1,50 @@
+<ion-view view-title="Record">
+  <ion-content class="padding">
+
+<!--
+        <div >
+          <a class="item  item-thumbnail-left item-text-wrap"  ng-repeat="item in data" >
+                
+            <img src="img/RaspiGarden.png">
+            <h2 > Hour:</h2>
+            <h1 class="temperature">{{ item.time }}</h1>
+            <h2> <span class="ion-ios-cloudy-outline larger"></span> Huminity:  </h2>
+            <h1 class="temperature">{{ item.humidity }}%</h1>
+
+            <h2 ><span class="ion-thermometer larger"></span> Temperature:</h2>
+            <h1 class="temperature">{{ item.temperature }}°c</h1>
+                       
+            
+          </a>
+
+        </div>
+
+   -->
+   <!--
+    <ion-list>
+      <ion-item class="item  item-thumbnail-left item-text-wrap"  ng-repeat="item in data" type="item-text-wrap" href="#/tab/chats/{{item.$id}}">
+
+
+
+         <img src="img/RaspiGarden.png">
+         <h2 > Hour:</h2>
+         <h1 class="temperature">{{ item.time }} <i class="icon ion-chevron-right icon-accessory"></i></h1>
+             
+      </ion-item>
+    </ion-list>
+  -->
+  <ion-list>
+      <ion-item class="item  item-thumbnail-left item-text-wrap"  ng-repeat="item in VideoData" type="item-text-wrap" href="#/tab/chats/{{item.$id}}">
+
+
+
+         <img src="img/RaspiGarden.png">
+         <h2 > Week: </h2>
+         <h1 class="temperature">{{ item.Name }} <i class="icon ion-chevron-right icon-accessory"></i></h1>
+             
+      </ion-item>
+    </ion-list>
+
+    
+  </ion-content>
+</ion-view>

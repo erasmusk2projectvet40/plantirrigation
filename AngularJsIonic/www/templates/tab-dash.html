@@ -1,0 +1,33 @@
+<ion-view view-title="RaspiGarden">
+  <ion-content class="padding">
+    <h4>Welcome to RaspiGarden</h4>
+    <p>
+    This is the RaspiGarden app for the European VET project 4.0
+    </p>
+           
+       
+       
+        <div >
+          <a class="item  item-thumbnail-left item-text-wrap" ng-model="data.text" >
+                
+            <img src="img/RaspiGarden.png">
+            <h2 > Hour:</h2>
+            <h1 class="temperature">{{ data.time }}</h1>
+            
+            <h2> <span class="ion-ios-cloudy-outline larger"></span> Huminity:  </h2>
+            <h1 class="temperature">{{ data.humidity }}%</h1>
+
+            <h2 ><span class="ion-thermometer larger"></span> Temperature:</h2>
+            <h1 class="temperature">{{ data.temperature }}°c</h1>
+
+            
+          </a>
+
+        </div>
+              
+                  <img class="image" src="{{url}}" /> 
+              
+
+  </ion-content>
+</ion-view>
+  
